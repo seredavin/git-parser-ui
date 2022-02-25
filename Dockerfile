@@ -1,5 +1,6 @@
-FROM nginx:alpine
-WORKDIR /usr/share/nginx/html
-RUN rm -rf ./*
-COPY ./* ./
-ENTRYPOINT ["nginx", "-g", "daemon off;"]
+FROM ubuntu
+RUN apt-get update
+RUN apt-get install nginx -y
+COPY ./* /var/www/html/
+EXPOSE 80
+CMD ["nginx","-g","daemon off;"]
