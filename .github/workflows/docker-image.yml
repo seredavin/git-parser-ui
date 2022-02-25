@@ -17,7 +17,7 @@ jobs:
     - uses: actions/checkout@v2
     
     - name: Generate image name
-      run: export IMAGE_NAME=git-parser-ui:$(date +%s)
+      run: echo "IMAGE_NAME=git-parser-ui:$(date +%s)" >> $GITHUB_ENV
       
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag $IMAGE_NAME
