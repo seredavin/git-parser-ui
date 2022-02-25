@@ -11,19 +11,21 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    
-    env:
-      ImageName: git-parser-ui:$(date +%s)
+
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag $ImageName
+    
+    - name: Generate image name
+      run: export IMAGE_NAME=git-parser-ui:$(date +%s)
       
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag $IMAGE_NAME
+
     - name: Login in docker
       run: docker login -u=${{ secrets.DOCKER_HUB_LOGIN }} -p=${{ secrets.DOCKER_HUB_PASSWORD }}
       
     - name: Push to docker hub
-      run: docker push $ImageName
+      run: docker push $IMAGE_NAME
     
 
