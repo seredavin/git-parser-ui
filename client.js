@@ -1,7 +1,7 @@
 
 const sseAddress = '/emitter'
 const addAddress = '/add-repo'
-const listAddress = '/' 
+const listAddress = '/all' 
 
 
 class App {
