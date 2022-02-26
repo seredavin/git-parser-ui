@@ -54,9 +54,6 @@ class App {
 
         this.eventSource.addEventListener('error', e => {
             this.eventSource.close()
-
-            this.eventLog.textContent = `Got an error: ${e}`
-
         }, {once: true})
     }
 }
