@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue May 03 15:50:15 SAMT 2022
+org.openjdk.jmc.browser.attach.zh_CN-8.3.0-SNAPSHOT.jar>=
+org.openjdk.jmc.browser.attach.zh_CN-8.3.0-SNAPSHOT.pom>=
+org.openjdk.jmc.browser.attach.zh_CN-8.3.0-SNAPSHOT-p2artifacts.xml>=
+org.openjdk.jmc.browser.attach.zh_CN-8.3.0-SNAPSHOT-p2metadata.xml>=

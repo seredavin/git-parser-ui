@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='org.openjdk.jmc.ide.launch' version='0.0.4.202205031141' generation='2'>
+    <update id='org.openjdk.jmc.ide.launch' range='[0.0.0,0.0.4.202205031141)' severity='0'/>
+    <properties size='7'>
+      <property name='org.eclipse.equinox.p2.name' value='IDE Launch'/>
+      <property name='org.eclipse.equinox.p2.provider' value='Oracle Corporation'/>
+      <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      <property name='maven-groupId' value='org.openjdk.jmc'/>
+      <property name='maven-artifactId' value='org.openjdk.jmc.ide.launch'/>
+      <property name='maven-version' value='0.0.4-SNAPSHOT'/>
+      <property name='maven-type' value='eclipse-plugin'/>
+    </properties>
+    <provides size='4'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.openjdk.jmc.ide.launch' version='0.0.4.202205031141'/>
+      <provided namespace='osgi.bundle' name='org.openjdk.jmc.ide.launch' version='0.0.4.202205031141'/>
+      <provided namespace='osgi.identity' name='org.openjdk.jmc.ide.launch' version='0.0.4.202205031141'>
+        <properties size='1'>
+          <property name='type' value='osgi.bundle'/>
+        </properties>
+      </provided>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <requires size='16'>
+      <required namespace='osgi.bundle' name='org.eclipse.debug.ui' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.jdt.launching' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.swt' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.jdt.debug.ui' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.openjdk.jmc.ui' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.openjdk.jmc.flightrecorder.controlpanel.ui' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.openjdk.jmc.flightrecorder.configuration' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.openjdk.jmc.rjmx' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.openjdk.jmc.ide.ui' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.openjdk.jmc.flightrecorder.controlpanel.ui.configuration' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.pde.ui' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.jdt.junit' range='0.0.0'/>
+      <required namespace='java.package' name='org.openjdk.jmc.rjmx.services.jfr' range='0.0.0'/>
+      <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'>
+        <description>
+          org.openjdk.jmc.ide.launch
+        </description>
+      </requiredProperties>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='org.openjdk.jmc.ide.launch' version='0.0.4.202205031141'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: org.openjdk.jmc.ide.launch;singleton:=true&#xA;Bundle-Version: 0.0.4.202205031141&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>

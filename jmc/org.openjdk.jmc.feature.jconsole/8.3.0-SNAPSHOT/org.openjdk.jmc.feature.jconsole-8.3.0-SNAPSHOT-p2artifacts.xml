@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='1'>
+  <artifact classifier='org.eclipse.update.feature' id='org.openjdk.jmc.feature.jconsole' version='8.3.0.202205031141'>
+    <properties size='7'>
+      <property name='artifact.size' value='66934'/>
+      <property name='download.size' value='66934'/>
+      <property name='maven-groupId' value='org.openjdk.jmc'/>
+      <property name='maven-artifactId' value='org.openjdk.jmc.feature.jconsole'/>
+      <property name='maven-version' value='8.3.0-SNAPSHOT'/>
+      <property name='maven-type' value='eclipse-feature'/>
+      <property name='download.contentType' value='application/zip'/>
+    </properties>
+  </artifact>
+</artifacts>

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='org.openjdk.jmc.flightrecorder.flameview' version='8.3.0.202205031141' generation='2'>
+    <update id='org.openjdk.jmc.flightrecorder.flameview' range='[0.0.0,8.3.0.202205031141)' severity='0'/>
+    <properties size='7'>
+      <property name='org.eclipse.equinox.p2.name' value='FlameView'/>
+      <property name='org.eclipse.equinox.p2.provider' value='Oracle Corporation'/>
+      <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      <property name='maven-groupId' value='org.openjdk.jmc'/>
+      <property name='maven-artifactId' value='org.openjdk.jmc.flightrecorder.flameview'/>
+      <property name='maven-version' value='8.3.0-SNAPSHOT'/>
+      <property name='maven-type' value='eclipse-plugin'/>
+    </properties>
+    <provides size='6'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.openjdk.jmc.flightrecorder.flameview' version='8.3.0.202205031141'/>
+      <provided namespace='osgi.bundle' name='org.openjdk.jmc.flightrecorder.flameview' version='8.3.0.202205031141'/>
+      <provided namespace='java.package' name='org.openjdk.jmc.flightrecorder.flameview' version='0.0.0'/>
+      <provided namespace='java.package' name='org.openjdk.jmc.flightrecorder.flameview.views' version='0.0.0'/>
+      <provided namespace='osgi.identity' name='org.openjdk.jmc.flightrecorder.flameview' version='8.3.0.202205031141'>
+        <properties size='1'>
+          <property name='type' value='osgi.bundle'/>
+        </properties>
+      </provided>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <requires size='6'>
+      <required namespace='osgi.bundle' name='org.openjdk.jmc.flightrecorder' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.openjdk.jmc.flightrecorder.serializers' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.openjdk.jmc.flightrecorder.ui' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.openjdk.jmc.flightrecorder.rules' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.openjdk.jmc.common' range='0.0.0'/>
+      <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'>
+        <description>
+          org.openjdk.jmc.flightrecorder.flameview
+        </description>
+      </requiredProperties>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='org.openjdk.jmc.flightrecorder.flameview' version='8.3.0.202205031141'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: org.openjdk.jmc.flightrecorder.flameview;singleton:=true&#xA;Bundle-Version: 8.3.0.202205031141&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue May 03 15:39:05 SAMT 2022
+common.test-8.3.0-SNAPSHOT.jar>=
+common.test-8.3.0-SNAPSHOT.pom>=
+common.test-8.3.0-SNAPSHOT-sources.jar>=

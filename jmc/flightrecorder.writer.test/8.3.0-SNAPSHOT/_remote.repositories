@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue May 03 15:39:07 SAMT 2022
+flightrecorder.writer.test-8.3.0-SNAPSHOT-tests.jar>=
+flightrecorder.writer.test-8.3.0-SNAPSHOT-sources.jar>=
+flightrecorder.writer.test-8.3.0-SNAPSHOT.pom>=
+flightrecorder.writer.test-8.3.0-SNAPSHOT.jar>=

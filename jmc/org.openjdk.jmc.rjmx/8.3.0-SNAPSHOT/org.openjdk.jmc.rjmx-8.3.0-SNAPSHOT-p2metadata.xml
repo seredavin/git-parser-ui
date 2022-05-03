@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='org.openjdk.jmc.rjmx' version='8.3.0.202205031141' generation='2'>
+    <update id='org.openjdk.jmc.rjmx' range='[0.0.0,8.3.0.202205031141)' severity='0'/>
+    <properties size='7'>
+      <property name='org.eclipse.equinox.p2.name' value='RJMX'/>
+      <property name='org.eclipse.equinox.p2.provider' value='Oracle Corporation'/>
+      <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      <property name='maven-groupId' value='org.openjdk.jmc'/>
+      <property name='maven-artifactId' value='org.openjdk.jmc.rjmx'/>
+      <property name='maven-version' value='8.3.0-SNAPSHOT'/>
+      <property name='maven-type' value='eclipse-plugin'/>
+    </properties>
+    <provides size='27'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.openjdk.jmc.rjmx' version='8.3.0.202205031141'/>
+      <provided namespace='osgi.bundle' name='org.openjdk.jmc.rjmx' version='8.3.0.202205031141'/>
+      <provided namespace='java.package' name='org.openjdk.jmc.rjmx' version='0.0.0'/>
+      <provided namespace='java.package' name='org.openjdk.jmc.rjmx.actionprovider' version='0.0.0'/>
+      <provided namespace='java.package' name='org.openjdk.jmc.rjmx.actionprovider.internal' version='0.0.0'/>
+      <provided namespace='java.package' name='org.openjdk.jmc.rjmx.descriptorprovider' version='0.0.0'/>
+      <provided namespace='java.package' name='org.openjdk.jmc.rjmx.internal' version='0.0.0'/>
+      <provided namespace='java.package' name='org.openjdk.jmc.rjmx.messages.internal' version='0.0.0'/>
+      <provided namespace='java.package' name='org.openjdk.jmc.rjmx.persistence.internal' version='0.0.0'/>
+      <provided namespace='java.package' name='org.openjdk.jmc.rjmx.preferences' version='0.0.0'/>
+      <provided namespace='java.package' name='org.openjdk.jmc.rjmx.servermodel' version='0.0.0'/>
+      <provided namespace='java.package' name='org.openjdk.jmc.rjmx.servermodel.internal' version='0.0.0'/>
+      <provided namespace='java.package' name='org.openjdk.jmc.rjmx.services' version='0.0.0'/>
+      <provided namespace='java.package' name='org.openjdk.jmc.rjmx.services.internal' version='0.0.0'/>
+      <provided namespace='java.package' name='org.openjdk.jmc.rjmx.subscription' version='0.0.0'/>
+      <provided namespace='java.package' name='org.openjdk.jmc.rjmx.subscription.internal' version='0.0.0'/>
+      <provided namespace='java.package' name='org.openjdk.jmc.rjmx.subscription.storage.internal' version='0.0.0'/>
+      <provided namespace='java.package' name='org.openjdk.jmc.rjmx.triggers' version='0.0.0'/>
+      <provided namespace='java.package' name='org.openjdk.jmc.rjmx.triggers.actions.internal' version='0.0.0'/>
+      <provided namespace='java.package' name='org.openjdk.jmc.rjmx.triggers.condition.internal' version='0.0.0'/>
+      <provided namespace='java.package' name='org.openjdk.jmc.rjmx.triggers.constraints.internal' version='0.0.0'/>
+      <provided namespace='java.package' name='org.openjdk.jmc.rjmx.triggers.extension.internal' version='0.0.0'/>
+      <provided namespace='java.package' name='org.openjdk.jmc.rjmx.triggers.fields.internal' version='0.0.0'/>
+      <provided namespace='java.package' name='org.openjdk.jmc.rjmx.triggers.internal' version='0.0.0'/>
+      <provided namespace='java.package' name='org.openjdk.jmc.rjmx.util.internal' version='0.0.0'/>
+      <provided namespace='osgi.identity' name='org.openjdk.jmc.rjmx' version='8.3.0.202205031141'>
+        <properties size='1'>
+          <property name='type' value='osgi.bundle'/>
+        </properties>
+      </provided>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <requires size='6'>
+      <required namespace='osgi.bundle' name='org.openjdk.jmc.ui.common' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.openjdk.jmc.commands' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.openjdk.jmc.common' range='0.0.0'/>
+      <required namespace='java.package' name='jakarta.mail' range='0.0.0'/>
+      <required namespace='java.package' name='jakarta.mail.internet' range='0.0.0'/>
+      <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'>
+        <description>
+          org.openjdk.jmc.rjmx
+        </description>
+      </requiredProperties>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='org.openjdk.jmc.rjmx' version='8.3.0.202205031141'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: org.openjdk.jmc.rjmx;singleton:=true&#xA;Bundle-Version: 8.3.0.202205031141&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>

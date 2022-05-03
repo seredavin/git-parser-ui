@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue May 03 15:39:05 SAMT 2022
+jdp-8.3.0-SNAPSHOT.pom>=
+jdp-8.3.0-SNAPSHOT.jar>=
+jdp-8.3.0-SNAPSHOT-javadoc.jar>=
+jdp-8.3.0-SNAPSHOT-sources.jar>=

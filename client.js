@@ -1,7 +1,7 @@
 
-const sseAddress = '/emitter'
-const addAddress = '/add-repo'
-const listAddress = '/all' 
+const sseAddress = 'http://localhost:8080/emitter'
+const addAddress = 'http://localhost:8081/add-repo'
+const listAddress = 'http://localhost:8080/all' 
 
 
 class App {

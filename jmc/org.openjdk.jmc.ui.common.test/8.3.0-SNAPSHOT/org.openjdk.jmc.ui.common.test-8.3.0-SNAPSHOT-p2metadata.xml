@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='org.openjdk.jmc.ui.common.test' version='8.3.0.202205031141' generation='2'>
+    <update id='org.openjdk.jmc.ui.common.test' range='[0.0.0,8.3.0.202205031141)' severity='0'/>
+    <properties size='6'>
+      <property name='org.eclipse.equinox.p2.name' value='Core Plug-in Test'/>
+      <property name='org.eclipse.equinox.p2.provider' value='Oracle Corporation'/>
+      <property name='maven-groupId' value='org.openjdk.jmc'/>
+      <property name='maven-artifactId' value='org.openjdk.jmc.ui.common.test'/>
+      <property name='maven-version' value='8.3.0-SNAPSHOT'/>
+      <property name='maven-type' value='eclipse-test-plugin'/>
+    </properties>
+    <provides size='4'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.openjdk.jmc.ui.common.test' version='8.3.0.202205031141'/>
+      <provided namespace='osgi.bundle' name='org.openjdk.jmc.ui.common.test' version='8.3.0.202205031141'/>
+      <provided namespace='osgi.identity' name='org.openjdk.jmc.ui.common.test' version='8.3.0.202205031141'>
+        <properties size='1'>
+          <property name='type' value='osgi.bundle'/>
+        </properties>
+      </provided>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <requires size='4'>
+      <required namespace='osgi.bundle' name='org.junit' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.openjdk.jmc.ui.common' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.openjdk.jmc.browser' range='0.0.0'/>
+      <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'>
+        <description>
+          org.openjdk.jmc.ui.common.test
+        </description>
+      </requiredProperties>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='org.openjdk.jmc.ui.common.test' version='8.3.0.202205031141'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: org.openjdk.jmc.ui.common.test;singleton:=true&#xA;Bundle-Version: 8.3.0.202205031141&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>

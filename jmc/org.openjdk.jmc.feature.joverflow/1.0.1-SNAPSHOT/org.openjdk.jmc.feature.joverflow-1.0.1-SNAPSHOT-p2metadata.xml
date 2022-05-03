@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='2'>
+  <unit id='org.openjdk.jmc.feature.joverflow.feature.group' version='1.0.1.202205031141' singleton='false'>
+    <update id='org.openjdk.jmc.feature.joverflow.feature.group' range='[0.0.0,1.0.1.202205031141)' severity='0'/>
+    <properties size='14'>
+      <property name='org.eclipse.equinox.p2.name' value='%name'/>
+      <property name='org.eclipse.equinox.p2.description' value='%description'/>
+      <property name='org.eclipse.equinox.p2.description.url' value='%descriptionUrl'/>
+      <property name='org.eclipse.equinox.p2.provider' value='%provider'/>
+      <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      <property name='maven-groupId' value='org.openjdk.jmc'/>
+      <property name='maven-artifactId' value='org.openjdk.jmc.feature.joverflow'/>
+      <property name='maven-version' value='1.0.1-SNAPSHOT'/>
+      <property name='maven-type' value='eclipse-feature'/>
+      <property name='df_LT.license' value='Copyright (c) 2018, 2022, Oracle and/or its affiliates.&#xA;&#xA;The Universal Permissive License (UPL), Version 1.0&#xA;&#xA;Subject to the condition set forth below, permission is hereby granted to any &#xA;person obtaining a copy of this software, associated documentation and/or data &#xA;(collectively the &quot;Software&quot;), free of charge and under any and all copyright &#xA;rights in the Software, and any and all patent rights owned or freely &#xA;licensable by each licensor hereunder covering either (i) the unmodified &#xA;Software as contributed to or provided by such licensor, or (ii) the Larger &#xA;Works (as defined below), to deal in both&#xA;&#xA;(a) the Software, and&#xA;&#xA;(b) any piece of software and/or hardware listed in the lrgrwrks.txt file if &#xA;one is included with the Software (each a “Larger Work” to which the &#xA;Software is contributed by such licensors), without restriction, including &#xA;without limitation the rights to copy, create derivative works of, &#xA;display, perform, and distribute the Software and make, use, sell, offer &#xA;for sale, import, export, have made, and have sold the Software and the &#xA;Larger Work(s), and to sublicense the foregoing rights on either these or &#xA;other terms.&#xA;&#xA;This license is subject to the following condition:&#xA;&#xA;The above copyright notice and either this complete permission notice or at a &#xA;minimum a reference to the UPL must be included in all copies or substantial &#xA;portions of the Software.&#xA;&#xA;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR &#xA;IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, &#xA;FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE &#xA;AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER &#xA;LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, &#xA;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE &#xA;SOFTWARE.&#xA;&#xA;&#xA;Copyright (c) 2018, 2021 Oracle America, Inc.&#xA;&#xA;Redistribution and use in source and binary forms, with or without &#xA;modification, are permitted provided that the following conditions are met:&#xA;&#xA;1. Redistributions of source code must retain the above copyright notice, &#xA;this list of conditions and the following disclaimer.&#xA;&#xA;2. Redistributions in binary form must reproduce the above copyright notice, &#xA;this list of conditions and the following disclaimer in the documentation &#xA;and/or other materials provided with the distribution.&#xA;&#xA;3. Neither the name of the copyright holder nor the names of its contributors &#xA;may be used to endorse or promote products derived from this software &#xA;without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; &#xA;AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE &#xA;IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE &#xA;FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL &#xA;DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER &#xA;CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, &#xA;OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;'/>
+      <property name='df_LT.copyright' value='Copyright © 2018, 2022, Oracle and/or its affiliates.'/>
+      <property name='df_LT.provider' value='Oracle Corporation'/>
+      <property name='df_LT.name' value='JOverflow Heap Analyzer'/>
+      <property name='df_LT.description' value='This feature adds functionality to explore the heap content and detect memory usage anti-patterns'/>
+    </properties>
+    <provides size='2'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.openjdk.jmc.feature.joverflow.feature.group' version='1.0.1.202205031141'/>
+      <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+    </provides>
+    <requires size='7'>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.openjdk.jmc.common' range='0.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui' range='0.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' range='0.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.openjdk.jmc.rjmx' range='0.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.openjdk.jmc.joverflow' range='[1.0.0.202205031141,1.0.0.202205031141]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.openjdk.jmc.joverflow.ui' range='[1.0.1.202205031141,1.0.1.202205031141]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.openjdk.jmc.feature.joverflow.feature.jar' range='[1.0.1.202205031141,1.0.1.202205031141]'>
+        <filter>
+          (org.eclipse.update.install.features=true)
+        </filter>
+      </required>
+    </requires>
+    <touchpoint id='null' version='0.0.0'/>
+    <licenses size='1'>
+      <license uri='%25licenseUrl' url='%25licenseUrl'>
+        %license
+      </license>
+    </licenses>
+    <copyright>
+      %copyright
+    </copyright>
+  </unit>
+  <unit id='org.openjdk.jmc.feature.joverflow.feature.jar' version='1.0.1.202205031141'>
+    <properties size='13'>
+      <property name='org.eclipse.equinox.p2.name' value='%name'/>
+      <property name='org.eclipse.equinox.p2.description' value='%description'/>
+      <property name='org.eclipse.equinox.p2.description.url' value='%descriptionUrl'/>
+      <property name='org.eclipse.equinox.p2.provider' value='%provider'/>
+      <property name='df_LT.license' value='Copyright (c) 2018, 2022, Oracle and/or its affiliates.&#xA;&#xA;The Universal Permissive License (UPL), Version 1.0&#xA;&#xA;Subject to the condition set forth below, permission is hereby granted to any &#xA;person obtaining a copy of this software, associated documentation and/or data &#xA;(collectively the &quot;Software&quot;), free of charge and under any and all copyright &#xA;rights in the Software, and any and all patent rights owned or freely &#xA;licensable by each licensor hereunder covering either (i) the unmodified &#xA;Software as contributed to or provided by such licensor, or (ii) the Larger &#xA;Works (as defined below), to deal in both&#xA;&#xA;(a) the Software, and&#xA;&#xA;(b) any piece of software and/or hardware listed in the lrgrwrks.txt file if &#xA;one is included with the Software (each a “Larger Work” to which the &#xA;Software is contributed by such licensors), without restriction, including &#xA;without limitation the rights to copy, create derivative works of, &#xA;display, perform, and distribute the Software and make, use, sell, offer &#xA;for sale, import, export, have made, and have sold the Software and the &#xA;Larger Work(s), and to sublicense the foregoing rights on either these or &#xA;other terms.&#xA;&#xA;This license is subject to the following condition:&#xA;&#xA;The above copyright notice and either this complete permission notice or at a &#xA;minimum a reference to the UPL must be included in all copies or substantial &#xA;portions of the Software.&#xA;&#xA;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR &#xA;IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, &#xA;FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE &#xA;AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER &#xA;LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, &#xA;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE &#xA;SOFTWARE.&#xA;&#xA;&#xA;Copyright (c) 2018, 2021 Oracle America, Inc.&#xA;&#xA;Redistribution and use in source and binary forms, with or without &#xA;modification, are permitted provided that the following conditions are met:&#xA;&#xA;1. Redistributions of source code must retain the above copyright notice, &#xA;this list of conditions and the following disclaimer.&#xA;&#xA;2. Redistributions in binary form must reproduce the above copyright notice, &#xA;this list of conditions and the following disclaimer in the documentation &#xA;and/or other materials provided with the distribution.&#xA;&#xA;3. Neither the name of the copyright holder nor the names of its contributors &#xA;may be used to endorse or promote products derived from this software &#xA;without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; &#xA;AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE &#xA;IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE &#xA;FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL &#xA;DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER &#xA;CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, &#xA;OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;'/>
+      <property name='df_LT.copyright' value='Copyright © 2018, 2022, Oracle and/or its affiliates.'/>
+      <property name='df_LT.provider' value='Oracle Corporation'/>
+      <property name='df_LT.name' value='JOverflow Heap Analyzer'/>
+      <property name='df_LT.description' value='This feature adds functionality to explore the heap content and detect memory usage anti-patterns'/>
+      <property name='maven-groupId' value='org.openjdk.jmc'/>
+      <property name='maven-artifactId' value='org.openjdk.jmc.feature.joverflow'/>
+      <property name='maven-version' value='1.0.1-SNAPSHOT'/>
+      <property name='maven-type' value='eclipse-feature'/>
+    </properties>
+    <provides size='3'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.openjdk.jmc.feature.joverflow.feature.jar' version='1.0.1.202205031141'/>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+      <provided namespace='org.eclipse.update.feature' name='org.openjdk.jmc.feature.joverflow' version='1.0.1.202205031141'/>
+    </provides>
+    <filter>
+      (org.eclipse.update.install.features=true)
+    </filter>
+    <artifacts size='1'>
+      <artifact classifier='org.eclipse.update.feature' id='org.openjdk.jmc.feature.joverflow' version='1.0.1.202205031141'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='zipped'>
+          true
+        </instruction>
+      </instructions>
+    </touchpointData>
+    <licenses size='1'>
+      <license uri='%25licenseUrl' url='%25licenseUrl'>
+        %license
+      </license>
+    </licenses>
+    <copyright>
+      %copyright
+    </copyright>
+  </unit>
+</units>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='1'>
+  <artifact classifier='osgi.bundle' id='org.openjdk.jmc.console.twitter' version='1.0.2.202205031141'>
+    <properties size='6'>
+      <property name='artifact.size' value='38615'/>
+      <property name='download.size' value='38615'/>
+      <property name='maven-groupId' value='org.openjdk.jmc'/>
+      <property name='maven-artifactId' value='org.openjdk.jmc.console.twitter'/>
+      <property name='maven-version' value='1.0.2-SNAPSHOT'/>
+      <property name='maven-type' value='eclipse-plugin'/>
+    </properties>
+  </artifact>
+</artifacts>

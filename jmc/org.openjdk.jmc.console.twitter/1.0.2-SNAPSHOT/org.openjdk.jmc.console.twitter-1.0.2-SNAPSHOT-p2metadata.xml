@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='org.openjdk.jmc.console.twitter' version='1.0.2.202205031141' generation='2'>
+    <update id='org.openjdk.jmc.console.twitter' range='[0.0.0,1.0.2.202205031141)' severity='0'/>
+    <properties size='6'>
+      <property name='org.eclipse.equinox.p2.name' value='Twitter'/>
+      <property name='org.eclipse.equinox.p2.provider' value='Oracle Corporation'/>
+      <property name='maven-groupId' value='org.openjdk.jmc'/>
+      <property name='maven-artifactId' value='org.openjdk.jmc.console.twitter'/>
+      <property name='maven-version' value='1.0.2-SNAPSHOT'/>
+      <property name='maven-type' value='eclipse-plugin'/>
+    </properties>
+    <provides size='4'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.openjdk.jmc.console.twitter' version='1.0.2.202205031141'/>
+      <provided namespace='osgi.bundle' name='org.openjdk.jmc.console.twitter' version='1.0.2.202205031141'/>
+      <provided namespace='osgi.identity' name='org.openjdk.jmc.console.twitter' version='1.0.2.202205031141'>
+        <properties size='1'>
+          <property name='type' value='osgi.bundle'/>
+        </properties>
+      </provided>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <requires size='5'>
+      <required namespace='osgi.bundle' name='org.openjdk.jmc.rjmx' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.openjdk.jmc.ui' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.core.net' range='0.0.0'/>
+      <required namespace='java.package' name='org.owasp.encoder' range='0.0.0'/>
+      <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=11))'>
+        <description>
+          org.openjdk.jmc.console.twitter
+        </description>
+      </requiredProperties>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='org.openjdk.jmc.console.twitter' version='1.0.2.202205031141'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: org.openjdk.jmc.console.twitter;singleton:=true&#xA;Bundle-Version: 1.0.2.202205031141&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>

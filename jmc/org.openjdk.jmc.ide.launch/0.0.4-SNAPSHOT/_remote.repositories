@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue May 03 15:50:09 SAMT 2022
+org.openjdk.jmc.ide.launch-0.0.4-SNAPSHOT.jar>=
+org.openjdk.jmc.ide.launch-0.0.4-SNAPSHOT.pom>=
+org.openjdk.jmc.ide.launch-0.0.4-SNAPSHOT-p2artifacts.xml>=
+org.openjdk.jmc.ide.launch-0.0.4-SNAPSHOT-p2metadata.xml>=
